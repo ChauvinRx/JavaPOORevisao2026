@@ -8,7 +8,14 @@ public class Carro {
 
 	public String modelo;
 
-	public void acelerar(int aceleracao) {
+	public void exibirInformacoes() {
 
+		System.out.println(this.toString());
+	}
+	@Override
+	public String toString() {
+		return "Marca: " + marca +
+							"\nCor : " + cor +
+							"\nModelo : " + modelo;
 	}
 }
